@@ -6,7 +6,7 @@
 
 Work Walnut is a tiny Windows desktop companion with a macOS beta. While it is running, it occasionally wobbles and gradually changes from healthy to increasingly worn-out states. Each state change may show a warm, sarcastic, or slightly strange reminder to drink water, move around, and take a break.
 
-[中文说明](README.md) · [Usage guide](docs/USAGE.md) · [FAQ](docs/FAQ.md) · [Privacy](docs/PRIVACY.md)
+[Bilingual homepage](README.md) · [Usage guide](docs/USAGE_EN.md) · [FAQ](docs/FAQ_EN.md) · [Privacy](docs/PRIVACY.md)
 
 ## Download
 

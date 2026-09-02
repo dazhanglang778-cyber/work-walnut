@@ -1,3 +1,69 @@
+# Work Walnut
+
+> A walnut worn down by work, remembering to rest for you.
+
+[English](#work-walnut) · [中文](#工作坚果) · [Releases](https://github.com/dazhanglang778-cyber/work-walnut/releases/latest)
+
+![Work Walnut hero](docs/images/hero.png)
+
+Work Walnut is a tiny Windows desktop companion with a macOS beta. It occasionally wobbles and gradually changes through seven increasingly worn-out states. Each state change may show a warm, sarcastic, or slightly strange reminder to drink water, move around, and take a break.
+
+[English usage guide](docs/USAGE_EN.md) · [English FAQ](docs/FAQ_EN.md) · [Privacy](docs/PRIVACY.md) · [中文说明](#工作坚果)
+
+## Download
+
+Download the latest release from [GitHub Releases](https://github.com/dazhanglang778-cyber/work-walnut/releases/latest).
+
+- Windows x64: `工作坚果-Windows-x64-v1.0.0.zip`
+- Apple Silicon Mac: `工作坚果-macOS-arm64-v1.0.0.zip`
+- Intel Mac: `工作坚果-macOS-x64-v1.0.0.zip`
+
+On Windows, extract the complete folder and run `启动工作坚果.exe`. Keep the `_internal` folder beside the EXE. On macOS, extract and open `工作坚果.app`. The macOS builds are unsigned, unnotarized betas; keep Gatekeeper enabled and only allow this individual app after verifying its Release source and SHA-256.
+
+## Highlights
+
+- Seven visual states, advancing every 45 minutes while the pet is running and the computer is awake.
+- Random break-reminder speech bubbles on state changes.
+- A final green overlay at 315 minutes; clicking it resets the cycle.
+- Dragging, click-bounce, left-double-click rolling, and right-double-click physics launch.
+- A right-click menu for manual states, reset, wobble control, and exit.
+- Local-only operation with no accounts, ads, analytics, or telemetry.
+
+![Motion demo](docs/images/demo.gif)
+
+## Controls
+
+| Input | Action |
+|---|---|
+| Left click | Small bounce |
+| Left-button drag | Move the pet and place it against screen edges |
+| Left double-click | Roll twice toward the screen interior |
+| Right click | Open the state and settings menu |
+| Right double-click | Launch diagonally with damped edge collisions |
+| Click a bubble or green overlay | Dismiss it; the end-of-cycle overlay also resets the cycle |
+
+On a Mac trackpad, use a two-finger secondary click or Control-click for right-click actions.
+
+![Controls](docs/images/controls.png)
+
+## Timing
+
+The timer measures time while the pet process is running and the computer is awake. It does **not** monitor keyboard activity, mouse activity, or actual labor. Closing and reopening the app starts a new healthy cycle. A running instance also resets at the next calendar day.
+
+![Seven states](docs/images/seven-states.png)
+
+![Timeline](docs/images/timeline.png)
+
+## License and artwork notice
+
+The program code is licensed under **GPL-3.0-only**. Character artwork and derivative visual assets under `app/assets/` are explicitly outside the GPL grant.
+
+The current artwork is derived from or related to *Plants vs. Zombies* visual material, and some states were based on online images whose complete authorship and license history could not be reliably traced. Free distribution and a disclaimer do not create permission. This is a free, non-commercial fan project and is not affiliated with, authorized, sponsored, or endorsed by Electronic Arts, PopCap Games, or their affiliates. Read [ASSET_NOTICE.md](ASSET_NOTICE.md) and [DISCLAIMER.md](DISCLAIMER.md) before reuse or redistribution.
+
+Maintainer: `dazhanglang`
+
+---
+
 # 工作坚果
 
 > 一颗会被工作啃坏的坚果，替你记得休息。
@@ -6,7 +72,7 @@
 
 “工作坚果”是一款小巧的 Windows 桌面宠物，并提供 macOS 测试版。它会在桌面上偶尔晃动，也会随着运行时间逐渐从正常变成轻伤、受伤、海盗、重伤、疯狂和红温。每次状态变化时，它会随机说一句暖心、毒舌或有点奇怪的话，提醒你喝水、走动和休息。
 
-[English README](README_EN.md) · [完整玩法](docs/USAGE.md) · [常见问题](docs/FAQ.md) · [隐私说明](docs/PRIVACY.md)
+[English](#work-walnut) · [完整玩法](docs/USAGE.md) · [常见问题](docs/FAQ.md) · [隐私说明](docs/PRIVACY.md)
 
 ## 下载与运行
 

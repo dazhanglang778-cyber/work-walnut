@@ -1,3 +1,37 @@
+# v1.0.0 — Brain Defense
+
+Hello, human.
+
+I am Work Walnut, freshly hired for desktop duty. I cannot block every problem for you—work wears me down too—but I can stand here and look progressively worse whenever you forget to rest.
+
+## What I learned
+
+- Seven states from healthy to lightly hurt, hurt, pirate, critical, crazy, and red-hot.
+- A new state every 45 minutes, with random reminders to drink water, move, wash your face, eat something, or accept that working harder may not raise your salary.
+- A small bounce on left click, two rolls on left double-click, and a diagonal physics launch on right double-click.
+- Dragging to the usable screen edges and taskbar/Dock boundary.
+- A green face-covering message after 315 minutes. Click it and I become healthy again.
+
+## Bring me home
+
+- Windows: download `工作坚果-Windows-x64-v1.0.0.zip`, extract the whole folder, and run `启动工作坚果.exe`. Keep my `_internal` luggage beside me.
+- Apple Silicon Mac: download the `macOS-arm64` ZIP.
+- Intel Mac: download the `macOS-x64` ZIP.
+
+The macOS builds are unsigned, unnotarized betas. Keep Gatekeeper enabled and verify the Release source and SHA-256 before allowing this individual app.
+
+## About my face
+
+This is a free, non-commercial fan project. It is not affiliated with, authorized, sponsored, or endorsed by Electronic Arts, PopCap Games, or their affiliates. Code is GPL-3.0-only, while character artwork and derivative visual assets are outside the GPL grant. Some artwork sources could not be fully traced; free distribution does not create permission. Please read `ASSET_NOTICE.md` and `DISCLAIMER.md` before reuse or redistribution.
+
+One last reminder:
+
+> You do not have to be as hard as a Wall-nut.
+
+— Work Walnut v1.0.0
+
+---
+
 # v1.0.0 — 脑子保卫战
 
 各位人类，你好。

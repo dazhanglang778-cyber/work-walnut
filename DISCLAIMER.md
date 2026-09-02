@@ -1,3 +1,15 @@
+# Disclaimer
+
+Work Walnut is a free, non-commercial fan project by `dazhanglang`, provided for personal learning, desktop entertainment, and technical discussion.
+
+It is not affiliated with, authorized, sponsored, or endorsed by Electronic Arts, PopCap Games, or their affiliates. Rights in *Plants vs. Zombies* and related characters, names, trademarks, and artwork belong to their respective owners.
+
+The project is provided “as is,” without express or implied warranty. Users are responsible for evaluating local law, platform rules, and asset permissions before downloading, running, modifying, or distributing it. This notice is not legal advice.
+
+Rights holders may use the copyright/asset Issue template. After a good-faith review, the maintainer is willing to add attribution, replace disputed material, or remove it.
+
+---
+
 # 免责声明
 
 “工作坚果”是由 `dazhanglang` 制作的免费、非商业同人项目，仅用于个人学习、桌面娱乐和技术交流。
@@ -7,4 +19,3 @@
 本项目按“现状”提供，不附带任何明示或默示担保。使用者应自行判断所在地法律、平台规则和素材授权要求，并自行承担下载、运行、修改或分发所产生的风险。本说明不是法律意见。
 
 如权利人认为仓库内容侵害其合法权益，请使用版权问题模板联系。维护者愿意在核实后及时署名、替换或移除相关内容。
-

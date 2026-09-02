@@ -1,3 +1,13 @@
+# Contributing
+
+Thank you for helping Work Walnut. Check existing Issues first, fork the repository, make one focused change per commit where practical, and explain your change and verification in the Pull Request. Include a screenshot or GIF for visible changes.
+
+Only submit code and text you have the right to contribute under GPL-3.0-only. Artwork is not automatically covered by GPL: provide the creator, source, license, and allowed uses. Unknown-source images should not enter future releases. Never submit credentials, personal paths, or private information.
+
+Forks and Pull Requests do not directly alter the original repository. A change enters the official project only after maintainer review and merge.
+
+---
+
 # 贡献指南
 
 感谢你愿意帮助“工作坚果”变得更好。
@@ -24,4 +34,3 @@ Fork 和 Pull Request 都不会直接改动原仓库。只有维护者 `dazhangl
 - 能提供完整来源与许可证明的素材。
 
 美术素材不会因提交到本仓库而自动适用 GPL。请在 Pull Request 中明确写出作者、来源、许可证和允许的使用范围。来源不明的网图原则上不接受进入后续版本。
-

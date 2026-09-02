@@ -1,28 +1,27 @@
 ---
-name: Bug 报告
-about: 报告运行异常、崩溃或交互问题
+name: Bug report / Bug 报告
+about: Report crashes or interaction problems / 报告运行异常、崩溃或交互问题
 title: "[Bug] "
 labels: bug
 assignees: ""
 ---
 
-## 问题描述
+## Description / 问题描述
 
-请简要说明发生了什么，以及你原本期待的结果。
+Describe what happened and what you expected. / 请简要说明发生了什么，以及你原本期待的结果。
 
-## 复现步骤
+## Steps to reproduce / 复现步骤
 
 1.
 2.
 3.
 
-## 环境
+## Environment / 环境
 
-- 工作坚果版本：
-- Windows 版本：
-- 使用方式：Release 便携版 / 源码版
+- Work Walnut version / 工作坚果版本：
+- OS and version / 操作系统及版本：
+- Build / 使用方式：Release / source / 源码版
 
-## 截图或日志
+## Screenshots or logs / 截图或日志
 
-请先移除其中的个人信息。
-
+Remove personal information first. / 请先移除其中的个人信息。

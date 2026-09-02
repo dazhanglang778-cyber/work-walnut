@@ -1,3 +1,15 @@
+# Artwork and Rights Notice
+
+The GNU GPL v3 license in this repository applies to program code, build scripts, and original text explicitly offered under that license. It does **not** grant rights to character artwork or derivative visual assets in `app/assets/`, nor to any *Plants vs. Zombies* character, trademark, or artwork.
+
+The current fan release uses imagery derived from or related to *Plants vs. Zombies*. Some states were based on online images whose original creators and complete license history could not be reliably traced. The relevant characters, game, artwork, names, and trademarks belong to their respective rights holders. Free, non-commercial publication and a disclaimer do not create permission or eliminate infringement risk.
+
+GPL redistribution rights for the code do not automatically authorize copying or redistributing the artwork. Modified releases should independently verify all asset rights; replacing the assets with original or explicitly licensed artwork is the safest option. Do not imply endorsement by Electronic Arts, PopCap Games, any original artist, or this project's maintainer.
+
+Rights holders or people with verifiable source information may use the bilingual copyright/asset Issue template to request attribution, source correction, replacement, or removal. The maintainer will review good-faith notices and act within a reasonable time.
+
+---
+
 # 素材与权利说明
 
 ## 许可边界
@@ -27,4 +39,3 @@
 4. 便于后续确认的联系方式。
 
 维护者会善意核查，并在合理范围内尽快补充来源、替换或移除争议内容。
-

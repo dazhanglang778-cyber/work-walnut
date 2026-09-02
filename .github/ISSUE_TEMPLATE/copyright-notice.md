@@ -1,24 +1,23 @@
 ---
-name: 版权或素材问题
-about: 请求补充署名、修正来源、替换或移除素材
+name: Copyright or asset concern / 版权或素材问题
+about: Request attribution, source correction, replacement, or removal / 请求补充署名、修正来源、替换或移除素材
 title: "[版权/素材] "
 labels: rights-review
 assignees: ""
 ---
 
-## 涉及内容
+## Content concerned / 涉及内容
 
-请列出具体文件名、页面链接或截图。
+List the file, page link, or screenshot. / 请列出具体文件名、页面链接或截图。
 
-## 权利或来源说明
+## Rights or source / 权利或来源说明
 
-请说明你与该内容的关系，并提供能够核验的原始出处或权利证明。
+Explain your relationship to the content and provide a verifiable source or rights evidence. / 请说明你与该内容的关系，并提供能够核验的原始出处或权利证明。
 
-## 希望采取的措施
+## Requested action / 希望采取的措施
 
-补充署名 / 修正来源 / 替换 / 移除 / 其他
+Attribution / source correction / replacement / removal / other
 
-## 联系方式
+## Contact / 联系方式
 
-如不便公开联系方式，请不要提交公开 Issue，可改用作者主页提供的私密联系方式。
-
+Do not post private contact information in a public Issue. / 如不便公开联系方式，请不要提交公开 Issue。
