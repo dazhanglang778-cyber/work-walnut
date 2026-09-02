@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.build-tools/
+.tcl-runtime/
+
+# Packaging output
+dist/
+build-output/
+*.exe
+*.msi
+*.zip
+!build/*.spec
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local runtime files
+*.log
+*.tmp

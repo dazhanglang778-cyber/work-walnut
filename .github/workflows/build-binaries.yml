@@ -1,0 +1,62 @@
+name: Build desktop binaries
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    name: Windows x64
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install build dependencies
+        run: python -m pip install -r requirements-build.txt
+      - name: Build release archive
+        shell: pwsh
+        run: ./build/build_windows.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: work-walnut-windows-x64
+          path: |
+            build-output/release/工作坚果-Windows-x64-v1.0.0.zip
+            build-output/release/SHA256SUMS-Windows.txt
+          if-no-files-found: error
+
+  macos:
+    name: macOS ${{ matrix.release_arch }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-15
+            release_arch: arm64
+          - runner: macos-15-intel
+            release_arch: x64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install build dependencies
+        run: python3 -m pip install -r requirements-build.txt
+      - name: Build app archive
+        run: bash build/build_macos.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: work-walnut-macos-${{ matrix.release_arch }}
+          path: |
+            build-output/release/工作坚果-macOS-${{ matrix.release_arch }}-v1.0.0.zip
+            build-output/release/SHA256SUMS-macOS-${{ matrix.release_arch }}.txt
+          if-no-files-found: error

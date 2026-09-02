@@ -1,0 +1,16 @@
+{
+  "window_size": 200,
+  "pet_size": 96,
+  "drag_threshold_pixels": 18,
+  "wobble_interval_seconds": [6, 14],
+  "roll_distance": 140,
+  "launch_speed": [900, 1250],
+  "launch_drag": 0.992,
+  "launch_restitution": 0.82,
+  "launch_max_seconds": 8,
+  "launch_stop_speed": 78,
+  "fatigue_minutes": [0, 45, 90, 135, 180, 225, 270],
+  "green_message_minutes": 315,
+  "auto_fatigue": true,
+  "mac_safe_margins": [8, 28, 8, 80]
+}
