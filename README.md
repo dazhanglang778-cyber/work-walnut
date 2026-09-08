@@ -2,7 +2,9 @@
 
 > A walnut worn down by work, remembering to rest for you.
 
-[English](#work-walnut) · [中文](#工作坚果) · [Releases](https://github.com/dazhanglang778-cyber/work-walnut/releases/latest)
+[Download](https://github.com/dazhanglang778-cyber/work-walnut/releases/latest) · [Give it a Star ⭐](https://github.com/dazhanglang778-cyber/work-walnut) · [Feedback & ideas](https://github.com/dazhanglang778-cyber/work-walnut/discussions) · [Report a bug](https://github.com/dazhanglang778-cyber/work-walnut/issues/new/choose)
+
+[English](#work-walnut) · [中文](#工作坚果)
 
 ![Work Walnut hero](docs/images/hero.png)
 
