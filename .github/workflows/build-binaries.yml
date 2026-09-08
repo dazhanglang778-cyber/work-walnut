@@ -7,15 +7,15 @@ on:
       - "v*"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   windows:
     name: Windows x64
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -24,7 +24,7 @@ jobs:
       - name: Build release archive
         shell: pwsh
         run: ./build/build_windows.ps1
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: work-walnut-windows-x64
           path: |
@@ -44,8 +44,8 @@ jobs:
             release_arch: x64
     runs-on: ${{ matrix.runner }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -53,10 +53,38 @@ jobs:
         run: python3 -m pip install -r requirements-build.txt
       - name: Build app archive
         run: bash build/build_macos.sh
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: work-walnut-macos-${{ matrix.release_arch }}
           path: |
             build-output/release/工作坚果-macOS-${{ matrix.release_arch }}-v1.0.0.zip
             build-output/release/SHA256SUMS-macOS-${{ matrix.release_arch }}.txt
           if-no-files-found: error
+
+  release:
+    name: Attach release downloads
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: [windows, macos]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: work-walnut-windows-x64
+          path: release/windows
+      - uses: actions/download-artifact@v8
+        with:
+          name: work-walnut-macos-arm64
+          path: release/macos-arm64
+      - uses: actions/download-artifact@v8
+        with:
+          name: work-walnut-macos-x64
+          path: release/macos-x64
+      - name: Attach archives and checksums to the GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release upload "$GITHUB_REF_NAME"
+          release/windows/*
+          release/macos-arm64/*
+          release/macos-x64/*
+          --clobber
