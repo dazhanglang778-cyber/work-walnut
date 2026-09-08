@@ -87,4 +87,5 @@ jobs:
           release/windows/*
           release/macos-arm64/*
           release/macos-x64/*
+          --repo "$GITHUB_REPOSITORY"
           --clobber
