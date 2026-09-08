@@ -2,6 +2,11 @@ name: Build desktop binaries
 
 on:
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing release tag to receive build files (leave blank to only build)
+        required: false
+        default: ""
   push:
     tags:
       - "v*"
@@ -63,7 +68,7 @@ jobs:
 
   release:
     name: Attach release downloads
-    if: startsWith(github.ref, 'refs/tags/')
+    if: startsWith(github.ref, 'refs/tags/') || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
     needs: [windows, macos]
     runs-on: ubuntu-latest
     steps:
@@ -82,8 +87,9 @@ jobs:
       - name: Attach archives and checksums to the GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || github.ref_name }}
         run: >-
-          gh release upload "$GITHUB_REF_NAME"
+          gh release upload "$RELEASE_TAG"
           release/windows/*
           release/macos-arm64/*
           release/macos-x64/*
